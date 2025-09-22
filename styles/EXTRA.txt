@@ -1,0 +1,1 @@
+No changes required if you've used earlier globals.css; layout classes are in components.
