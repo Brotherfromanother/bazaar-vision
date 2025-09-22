@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 222 20% 8%;
+  --surface: 222 18% 12%;
+  --surface-2: 222 14% 16%;
+  --border: 222 10% 26%;
+  --text: 222 20% 96%;
+  --muted: 222 8% 70%;
+  --accent: 45 100% 50%;
+}
+
+html, body { height: 100%; }
+body { @apply bg-bg text-text antialiased; }
+
+.card { @apply bg-surface rounded-2xl shadow-soft border border-border; }
+.card-muted { @apply bg-surface2 border-border; }
+
+.table-base { @apply w-full text-sm; }
+.table-base thead th { @apply sticky top-0 bg-surface border-b border-border px-3 py-2 text-left font-semibold text-muted; }
+.table-base tbody td { @apply border-b border-border px-3 py-2; }
+
+.badge { @apply inline-flex items-center gap-1 rounded-full px-2 py-0.5 bg-surface2 border border-border text-muted; }
+.button { @apply inline-flex items-center gap-2 rounded-xl border border-border bg-surface px-3 py-2 hover:bg-surface2 transition; }
+.input { @apply bg-surface2 border border-border rounded-xl px-3 py-2 outline-none focus:ring-2 focus:ring-accent/40; }
+.select { @apply bg-surface2 border border-border rounded-xl px-3 py-2; }
+.link { @apply text-accent hover:underline; }
